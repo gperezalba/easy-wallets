@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="/icon.png"/>
+    <title>EASY Wallet</title>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bignumber.js/9.0.0/bignumber.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fortmatic@latest/dist/fortmatic.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@portis/web3@2.0.0-beta.54/umd/index.js"
+      integrity="sha256-pPwrJF/X2v9erIHBoY3ZWb4P/cRx3j3/zyvQvycabs0="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="app.js"></script>
+  </head>
+  <body>
+	<h1>EASY Wallet</h1>
+  <button onclick="App.connectMetamask();">Conectar Metamask</button>
+  <button onclick="App.connectFortmatic();">Conectar Fortmatic</button>
+  <button onclick="App.connectPortis();">Conectar Portis</button>
+  <br>
+  <div id="walletprovider"></div>
+	<h2>Info</h2>
+    <h4>Balance</h4>
+    <div id="info"></div>
+    <br>
+    <button onclick="App.updateInfo();">Update</button>
+    <br>
+	<br>
+  <h2>Sign</h2>
+    <br>
+    <div id="signature"></div>
+    <button onclick="App.sign();">Sign</button>
+    <br>
+	<br>
+  </body>
+</html>
