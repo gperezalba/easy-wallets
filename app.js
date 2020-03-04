@@ -34,8 +34,8 @@ const App = {
 		}
 
 		// Setting network to localhost blockchain
-		//const fm = new Fortmatic('pk_test_0CAE1CD64F66E898', customNodeOptions);
-		const fm = new Fortmatic('pk_test_0CAE1CD64F66E898');
+		const fm = new Fortmatic('pk_test_0CAE1CD64F66E898', customNodeOptions);
+		//const fm = new Fortmatic('pk_test_0CAE1CD64F66E898');
 		let _web3 = new Web3(fm.getProvider());
 
 		// TODO: Step 2: Setup Developer API Key
