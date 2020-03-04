@@ -76,7 +76,7 @@ const App = {
             const accounts = await this.web3.eth.getAccounts();
 			this.account = accounts[0];
 			//console.log(this.web3.version);
-			//console.log(await this.web3.eth.net.getId())
+			console.log(await this.web3.eth.net.getId())
 			//console.log(this.account);
 
 			this.updateInfo();
